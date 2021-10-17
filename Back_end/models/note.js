@@ -3,7 +3,8 @@ module.exports = function(sequelize, DataTypes) {
       note_id: {
         type: DataTypes.INTEGER(5).UNSIGNED,
         allowNull: false,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true
       },
       note_title: {
         type: DataTypes.STRING(45),
