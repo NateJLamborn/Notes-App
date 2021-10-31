@@ -1,0 +1,42 @@
+{
+    "tables": {
+        "notes": {
+            "tableName": "notes",
+            "schema": {
+                "NoteId": {
+                    "allowNull": false,
+                    "autoIncrement": true,
+                    "primaryKey": true,
+                    "field": "NoteId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "NoteTitle": {
+                    "allowNull": false,
+                    "field": "NoteTitle",
+                    "seqType": "Sequelize.STRING"
+                },
+                "NoteBody": {
+                    "allowNull": false,
+                    "field": "NoteBody",
+                    "seqType": "Sequelize.STRING"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "defaultValue": {
+                        "internal": true,
+                        "value": "Sequelize.Literal"
+                    },
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "revision": 1
+}
