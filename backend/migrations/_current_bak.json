@@ -18,7 +18,7 @@
                 "NoteBody": {
                     "allowNull": false,
                     "field": "NoteBody",
-                    "seqType": "Sequelize.STRING"
+                    "seqType": "Sequelize.STRING(2000)"
                 },
                 "updatedAt": {
                     "allowNull": false,
@@ -38,5 +38,5 @@
             "indexes": []
         }
     },
-    "revision": 1
+    "revision": 2
 }

@@ -30,7 +30,10 @@
                     "seqType": "Sequelize.DATE"
                 },
                 "createdAt": {
-                    "allowNull": false,
+                    "defaultValue": {
+                        "internal": true,
+                        "value": "Sequelize.Literal"
+                    },
                     "field": "createdAt",
                     "seqType": "Sequelize.DATE"
                 }
@@ -38,5 +41,5 @@
             "indexes": []
         }
     },
-    "revision": 2
+    "revision": 3
 }
