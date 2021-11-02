@@ -2,8 +2,14 @@ var express = require('express');
 var router = express.Router();
 var models = require('../models')
 
+//get all notes
 router.get('/', function(req, res, next) {
-    res.send('Note Get');
+  models.notes
+    .findAll({})
+    .then(notesFound => {
+      res.setHeader('Content-Type', 'application/json');
+      res.send(JSON.stringify(notesFound));
+    });
 });
 
 //create a new note

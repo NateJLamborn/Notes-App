@@ -6,7 +6,7 @@ export const Home = () => {
     return (
         <div>
             <Heading />
-            <NoteList />
+            <NoteList uri="http://localhost:3001/notes"/>
         </div>
     )
 }
